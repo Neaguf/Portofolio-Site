@@ -1,0 +1,166 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  text-align: center;
+}
+
+.profile-img {
+  width: 240px;
+  height: 180px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-image {
+  width: 100%;
+}
+aside {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(245, 245, 245);
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+.mobile {
+  display: flex;
+
+  gap: 300px;
+}
+.tablet,
+.pc {
+  display: none;
+}
+@media (min-width: 640px) {
+  .navbar {
+    display: flex;
+
+    flex-direction: row;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .profile-desc {
+    padding: auto;
+    margin: auto;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 40%;
+  }
+  .pc,
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+  }
+  .tablet-details {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    align-items: flex-start;
+  }
+
+  .navbar {
+    gap: 100px;
+
+    justify-content: space-between;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .main-nav-title {
+    font-size: 20px;
+  }
+
+  .navbar {
+  }
+  .profile {
+    padding-left: 10%;
+    padding-right: 15%;
+    margin-bottom: 60px;
+
+    font-size: 20px;
+  }
+  .profile-img {
+    width: 500px;
+    height: 300px;
+  }
+  .profile-desc {
+    padding: 50px;
+    text-align: left;
+    font-size: 23px;
+  }
+  .card {
+    width: 30%;
+  }
+  .card-description {
+    margin-bottom: 70px;
+  }
+  .tablet,
+  .mobile {
+    display: none;
+  }
+  .pc {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 10px;
+  }
+  .pc-details {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
